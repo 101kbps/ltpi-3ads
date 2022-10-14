@@ -10,9 +10,8 @@
 
    <?php
     if(!isset($_GET["nome"])){
-    ?>
-    
-    <form action="action.php" method="Post">
+    ?>    
+    <form action="calcula_imc.php" method="Post">
     <p>Nome: <input type="text" nome="nome" /></p>
     <p>Idade: <input type="text" nome="idade" /></p>
     <p><input type="submit" /></p>
