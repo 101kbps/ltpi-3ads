@@ -7,6 +7,21 @@
     <title>FORMULÁRIO IMC</title>
 </head>
 <body>
+
+   <?php
+    if(!isset($_GET["nome"])){
+    ?>
     
+    <form action="action.php" method="Post">
+    <p>Nome: <input type="text" nome="nome" /></p>
+    <p>Idade: <input type="text" nome="idade" /></p>
+    <p><input type="submit" /></p>
+    
+    </form>
+    <?php
+    }else{
+    
+    }
+    ?>
 </body>
 </html>
