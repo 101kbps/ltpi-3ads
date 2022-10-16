@@ -9,17 +9,16 @@
 <body>
 
    <?php
-    if(!isset($_GET["nome"])){
+    if(!isset($_GET['submit'])){
     ?>    
     <form action="calcula_imc.php" method="Post">
-    <p>Nome: <input type="text" nome="nome" /></p>
-    <p>Idade: <input type="text" nome="idade" /></p>
+    <p>Nome: <input type="text" name="nome" required /></p>
+    <p>Altura(em m): <input type="text" name="altura" required/></p>
+    <p>Peso (em kg): <input type="text" name="peso" required/></p>
     <p><input type="submit" /></p>
     
     </form>
     <?php
-    }else{
-    
     }
     ?>
 </body>
