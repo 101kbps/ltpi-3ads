@@ -20,7 +20,8 @@
 
 	function media($nota1, $nota2){
     $media = ($nota1+$nota2)/2;
-    number_format((float)$media, 2, '.', '');
+    $media= number_format((float)$media, 2, '.', '');
+
     $color1 = "red";
     $color2 = "orange";
     $color3 = "blue";

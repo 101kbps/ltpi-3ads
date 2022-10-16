@@ -7,7 +7,7 @@
     <title>CÁLCULO DE IMC</title>
 </head>
 <body>
-    
+
 <?php
     $peso= $_POST['peso'];
     $altura= $_POST['altura'];
@@ -17,11 +17,39 @@
 
 	$peso = floatval($peso);	
 	$altura = floatval($altura);	
+
 	function calcula_imc($peso, $altura){
     $calcula_imc = $peso/pow($altura, 2);
-    return number_format((float)$calcula_imc, 2, '.', '');
+    $calcula_imc = number_format((float)$calcula_imc, 2, '.', ',');
 
+    $color1 = "purple";
+    $color2 = "pink";
+    $color3 = "green";
+    $color4 = "orange";
+    $color5 = "red";
+    $color6 = "gray";
+    $color7 = "black";
+
+
+
+    if ($calcula_imc < 17){
+        return '<div style="Color:'.$color1.'"><b>'.$calcula_imc.'</div></b>';
+        } else{
+        if ($calcula_imc >= 17 &&  $calcula_imc < 18.49) {
+            return '<div style="Color:'.$color2.'"><b>'.$calcula_imc.'</div></b>';
+        }elseif ($calcula_imc >= 18.5 &&  $calcula_imc < 24.99) {
+            return '<div style="Color:'.$color3.'"><b>'.$calcula_imc.'</div></b>';
+        }elseif ($calcula_imc >= 25 &&  $calcula_imc < 29.99) {
+            return '<div style="Color:'.$color4.'"><b>'.$calcula_imc.'</div></b>';
+        }elseif ($calcula_imc >= 30 &&  $calcula_imc < 34.99) {
+            return '<div style="Color:'.$color5.'"><b>'.$calcula_imc.'</div></b>';
+        }elseif ($calcula_imc >= 35 &&  $calcula_imc < 39.99) {
+            return '<div style="Color:'.$color6.'"><b>'.$calcula_imc.'</div></b>';
+        } else {
+            return '<div style="Color:'.$color7.'"><b>'.$calcula_imc.'</div></b>';
+        }
     }
+}
 
 	function imc($peso, $altura){
 	$imc = $peso/pow($altura, 2);
@@ -45,7 +73,7 @@
         }
     }
  	}
-	 printf($_POST['nome'].", seu IMC é de: ".calcula_imc($peso,$altura). ". Você: ".imc($peso,$altura).".");
+	 printf($_POST['nome'].", seu IMC é de: ".calcula_imc($peso,$altura). "Você ".imc($peso,$altura).".");
     ?>
 </body>
 </html>
