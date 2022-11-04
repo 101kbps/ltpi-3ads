@@ -1,1 +1,2 @@
-{"nome":"weofjowejri","genero":"masculino","data_nasc":"oiejfjrwoij","telefone":"iwjroiwjeri","email":"0935890384"}
+{"nome":"mari","genero":"feminino","data_nasc":"12\/09\/2002","telefone":"61996816669","email":"kajdfhusjahj@hotmail.com"}
+{"nome":"mari","genero":"feminino","data_nasc":"12\/09\/2002","telefone":"61996816669","email":"kajdfhusjahj@hotmail.com"}

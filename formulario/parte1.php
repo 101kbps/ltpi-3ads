@@ -135,7 +135,7 @@ select {
                 <div id="input_datanasc" class="input">
                     <input id="nasc" type="text" 
                         name="nasc" 
-                        placeholder="Data de Nascimento" required>
+                        placeholder="Data de Nascimento(formato dd/mm/yyyy)" required>
                 </div>
                 <div id="input_telefone" class="input">
                     <input id="telefone" type="text" 
